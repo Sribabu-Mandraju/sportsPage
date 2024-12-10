@@ -11,8 +11,15 @@ const App = () => {
       <div className="text-center">
           <Navbar/>
           <Tabs/>
-          <Header/>    
+          <Header/>  
+          <div className="flex flex-wrap">
           <Table/>
+          <Table/>
+          <Table/>
+          <Table/>
+          <Table/>
+          <Table/>
+          </div>  
           <Footer/>
       </div>
     </div>
