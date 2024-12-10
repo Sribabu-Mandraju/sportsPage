@@ -20,8 +20,8 @@ export const Tabs = () => {
           <button
             key={tabName}
             className={`${
-              tabs === tabName ? "bg-[#abe718]" : ""
-            } h-[30px] px-[10px] font-semibold rounded-md`}
+              tabs === tabName ? "bg-[#abe718]  text-black" : ""
+            } h-[30px] px-[10px]  font-semibold rounded-md`}
             onClick={() => setTabs(tabName)}
           >
             {tabName}
