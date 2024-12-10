@@ -5,7 +5,7 @@ import { FaDiscord } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 export const Footer = () => {
   return (
-    <div className="bg-[black] w-full flex flex-col items-center  relative pb-[140px]"> 
+    <div className="bg-[black] w-full flex flex-col items-center relative pb-[140px] lg:pb-[20px]"> 
     <div className="logo flex justify-center w-full order-1">
       <img
         className="logo-img h-[50px] w-[170px] mt-[50px]"
@@ -37,26 +37,28 @@ export const Footer = () => {
     <div className="mobile-navigate w-full bg-[white] h-[100px] rounded-t-[30px] md:rounded-t-[50px] fixed bottom-0 lg:hidden shadow-lg z-10 flex justify-around">
     <div className="today-wrap flex flex-col mt-[14px] justify-center items-center">
       <img src='https://www.oddstrader.com/TodaySelected.svg' alt="today" className='h-[24px] w-[24px]'/>
-      <span>Today</span>
+      <span className='mt-[5.7px]'>Today</span>
     </div>
     <div className="picks-wrap flex flex-col mt-[14px] justify-center items-center">
       <img src="https://www.oddstrader.com/Picks.svg" alt="picks" className='h-[24px] w-[24px]'/>
-      <span>Picks</span>
+      <span className='mt-[5.7px]'>Picks</span>
     </div>
-    <div className="League-wrap flex flex-col mt-[14px] relative">
-    <div className="circle-wrap h-[50px] w-[50px] rounded-full  flex justify-center items-center absolute top-[-30px] bg-[white]">
+    <div className="League-wrap flex flex-col mt-[14px] relative justify-center items-center">
+    <div className="circle-wrap h-[70px] w-[70px] rounded-full  flex justify-center items-center absolute top-[-30px] bg-[white]">
+      <div className="image-wrapper border-[1px] rounded-full border-[#abe718] shadow-2xl h-[60px] w-[60px]  flex justify-center items-center ">
       <img src="https://logos.oddstrader.com/league-logos/Leagues.webp" alt="League" className='h-[24px] w-[24px]'/>
       </div>
-      <span className='py-[20px]'>League</span>
+      </div>
+      <span className='py-[30px]'>League</span>
     </div>
     <div className="mybets-wrap flex flex-col mt-[14px] justify-center items-center">
       <img src="https://www.oddstrader.com/MyBets.svg" alt="mybets" className='h-[24px] w-[24px]'/>
-      <span>My Bets</span>
+      <span className='mt-[5.7px]'>My Bets</span>
     </div>
     <div className="Profile-wrap flex flex-col mt-[14px] justify-center items-center">
       <img src="    https://www.oddstrader.com/Profile.svg
 " alt="mybets" className='h-[24px] w-[24px]'/>
-      <span>Profile</span>
+      <span className='mt-[5.7px]'>Profile</span>
     </div>
     </div>
   </div>
