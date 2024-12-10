@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLocationDot } from "react-icons/fa6";
+import { FaRegCircleUser } from "react-icons/fa6";
 const Navbar = () => {return (
     <div className="navbar w-full bg-black h-[100px] flex justify-around items-center">
         <div className="logo h-[50px] w-[170px]">
@@ -16,39 +17,38 @@ const Navbar = () => {return (
                 </ul>
             </div>
         </div>
-        <div className="profile">
-            <div className="location flex items-center gap-[10px]">
-            <FaLocationDot className='text-[lime] outline-none'/>
-                <select name="location" id="location" className='outline-none bg-[black] text-white'>
-                        <option>World</option>
-                        <option>New Jersey</option> 
-                        <option>New York</option> 
-                        <option>Pennsylvania</option> 
-                        <option>Indiana</option>
-                        <option>Iowa
-         </option>                   <option>Illinois
-     </option>                       <option>Virginia
-     </option>                       <option>West Virginia
-</option>                            <option>Tennessee
-    </option>                        <option>Connecticut
-  </option>                          <option>Michigan
-     </option>                       <option>Arizona
-      </option>                      <option>Louisiana
-    </option>                        <option>Wyoming
-      </option>                      <option>Oregon
-       </option>                     <option>Kansas
-       </option>                     <option>Washington DC
-</option>                            <option>Maryland
-     </option>                       <option>Ohio
-         </option>                   <option>North Carolina</option>
-                            <option>Massachusetts
-</option>                            <option>Mississippi 
- </option>
-                            
+        <div className="profile flex gap-[30px]">
+        <div className="location flex items-center gap-[10px]">
+            <FaLocationDot className='location text-[lime] outline-none'/>
+                <select name="location" id="location" className='outline-none bg-black text-white'>
+                        <option className='bg-[white] text-black'>World</option>
+                        <option className='bg-[white] text-black'>New Jersey</option> 
+                        <option className='bg-[white] text-black'>New York</option> 
+                        <option className='bg-[white] text-black'>Pennsylvania</option> 
+                        <option className='bg-[white] text-black'>Indiana</option>
+                        <option className='bg-[white] text-black'>Iowa</option> 
+                        <option className='bg-[white] text-black'>Illinois</option>
+                        <option className='bg-[white] text-black'>Virginia</option>
+                        <option className='bg-[white] text-black'>WestVirginia</option>
+                        <option className='bg-[white] text-black'>Tennessee</option>
+                        <option className='bg-[white] text-black'>Connecticut</option> 
+                        <option className='bg-[white] text-black'>Michigan</option> 
+                        <option className='bg-[white] text-black'>Arizona</option>
+                        <option className='bg-[white] text-black'>Louisiana</option>
+                        <option className='bg-[white] text-black'>Wyoming</option>
+                        <option className='bg-[white] text-black'>Oregon</option>
+                        <option className='bg-[white] text-black'>Kansas</option>
+                        <option className='bg-[white] text-black'>WashingtonDC</option>
+                        <option className='bg-[white] text-black'>Maryland</option>
+                        <option className='bg-[white] text-black'>Ohio</option> 
+                        <option className='bg-[white] text-black'>NorthCarolina</option>
+                        <option className='bg-[white] text-black'>Massachusetts</option>
+                        <option className='bg-[white] text-black'>Mississippi</option>
                 </select>
             </div>
+            <FaRegCircleUser className="text-white rounded-full h-[40px] w-[40px]"/>
         </div>
-    </div>
+        </div>
   )
 }
 export default Navbar;
