@@ -12,7 +12,7 @@ const App = () => {
           <Navbar/>
           <Tabs/>
           <Header/>  
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center gap-[20px]">
           <Table/>
           <Table/>
           <Table/>
