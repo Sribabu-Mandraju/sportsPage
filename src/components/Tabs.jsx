@@ -1,5 +1,16 @@
 import React, { useState } from "react";
 import { TfiMenuAlt } from "react-icons/tfi";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { Button } from "@/components/ui/button";
 
 export const Tabs = () => {
   const [tabs, setTabs] = useState("ODDS");
@@ -19,9 +30,26 @@ export const Tabs = () => {
       <button className="bg-[black] w-[150px] h-[50px] rounded-r-lg text-white hidden lg:flex lg:justify-center lg:items-center">
         NCAAB
       </button>
-      <button className="lg:hidden text-white flex justify-center items-center text-[24px] pl-[10px]">
-        <TfiMenuAlt />
-      </button>
+
+      <Drawer>
+        <DrawerTrigger className="md:hidden">
+          <button className="lg:hidden text-white flex justify-center items-center text-[24px] pl-[10px]">
+            <TfiMenuAlt />
+          </button>
+        </DrawerTrigger>
+        <DrawerContent>
+          <DrawerHeader>
+            <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+            <DrawerDescription>This action cannot be undone.</DrawerDescription>
+          </DrawerHeader>
+          <DrawerFooter>
+            <Button>Submit</Button>
+            <DrawerClose>
+              <Button variant="outline">Cancel</Button>
+            </DrawerClose>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
       <div className="Tabs lg:border-[1px] shadow-lg px-[20px] py-[10px] text-[white] lg:text-black flex gap-[10px] lg:rounded-lg items-center bg-[#1b1b1b] lg:bg-[white] w-auto overflow-x-scroll">
         {tabNames.map((tabName) => (
           <button
