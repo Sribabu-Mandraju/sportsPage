@@ -32,7 +32,7 @@ export const Tabs = () => {
       </button>
 
       <Drawer>
-        <DrawerTrigger className="md:hidden">
+        <DrawerTrigger className="lg:hidden">
           <button className="lg:hidden text-white flex justify-center items-center text-[24px] pl-[10px]">
             <TfiMenuAlt />
           </button>
