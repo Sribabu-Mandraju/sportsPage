@@ -1,0 +1,28 @@
+{
+    "files": [],
+    "references": [
+      {
+        "path": "./tsconfig.app.json"
+      },
+      {
+        "path": "./tsconfig.node.json"
+      }
+    ],
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./src/*"]
+      },
+      "forceConsistentCasingInFileNames": true, // Ensures consistent file casing across OSes
+      "strict": true,                          // Enables all strict type-checking options
+      "target": "ESNext",                      // Specifies ECMAScript target version
+      "module": "ESNext",                      // Uses ES modules for better compatibility with modern JS tools
+      "moduleResolution": "Node",             // Resolves modules using Node.js-style resolution
+      "jsx": "react-jsx",                     // For React JSX syntax in TSX files
+      "esModuleInterop": true,                // Ensures compatibility with CommonJS modules
+      "skipLibCheck": true,                   // Skips type checking of declaration files for faster builds
+      "resolveJsonModule": true               // Allows importing JSON files
+    },
+    "include": ["src"]
+  }
+  
