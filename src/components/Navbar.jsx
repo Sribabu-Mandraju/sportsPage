@@ -1,21 +1,26 @@
-import React from 'react';
+import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaRegCircleUser } from "react-icons/fa6";
-const Navbar = () => {return (
+const Navbar = () => {
+    return (
     <div className="navbar w-full bg-black h-[100px] flex justify-around items-center">
-        <div className="logo h-[50px] w-[170px]">
-        <img class="logo-img h-full w-full" src="https://otcdn.virginia.us-east-1.oddstrader.com/OT-LogoWhiteGreen.svg" alt="Logo"/>
+      <div className="logo h-[50px] w-[170px]">
+        <img
+          class="logo-img h-full w-full"
+          src="https://otcdn.virginia.us-east-1.oddstrader.com/OT-LogoWhiteGreen.svg"
+          alt="Logo"
+        />
+      </div>
+      <div className="menu">
+        <div className="nav-links flex text-white font-semibold text-xl">
+          <ul className="flex gap-[20px]">
+            <li>ODDS</li>
+            <li>PICKS</li>
+            <li>SPORTSBOOKS</li>
+            <li>REVIEWS</li>
+            <li>STATES</li>
+          </ul>
         </div>
-        <div className="menu">
-            <div className="nav-links flex text-white font-semibold text-xl">
-               <ul className='flex gap-[20px]'>
-                <li>ODDS</li>
-                <li>PICKS</li>
-                <li>SPORTSBOOKS</li>
-                <li>REVIEWS</li>
-                <li>STATES</li>
-                </ul>
-            </div>
         </div>
         <div className="profile flex gap-[30px]">
         <div className="location flex items-center gap-[10px]">
