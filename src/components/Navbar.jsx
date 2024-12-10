@@ -11,7 +11,7 @@ const Navbar = () => {
           alt="Logo"
         />
       </div>
-      <div className="menu">
+      <div className="menu hidden lg:flex">
         <div className="nav-links flex text-white font-semibold text-xl">
           <ul className="flex gap-[20px]">
             <li>ODDS</li>
@@ -22,7 +22,7 @@ const Navbar = () => {
           </ul>
         </div>
         </div>
-        <div className="profile flex gap-[30px]">
+        <div className="profile gap-[30px] hidden lg:flex">
         <div className="location flex items-center gap-[10px]">
             <FaLocationDot className='location text-[lime] outline-none'/>
                 <select name="location" id="location" className='outline-none bg-black text-white'>
