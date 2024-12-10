@@ -5,7 +5,14 @@ export const Tabs = () => {
   const [tabs, setTabs] = useState("ODDS");
 
   // Array of tab names
-  const tabNames = ["ODDS", "PICKS", "FUTURES", "INJURIES", "RANKINGS", "STANDINGS"];
+  const tabNames = [
+    "ODDS",
+    "PICKS",
+    "FUTURES",
+    "INJURIES",
+    "RANKINGS",
+    "STANDINGS",
+  ];
 
   return (
     <div className="flex lg:mt-[10px] gap-[30px] bg-[black] lg:bg-[white]">
