@@ -33,9 +33,9 @@ export const Tabs = () => {
 
       <Drawer>
         <DrawerTrigger className="lg:hidden">
-          <button className="lg:hidden text-white flex justify-center items-center text-[24px] pl-[10px]">
+          <div className="lg:hidden text-white flex justify-center items-center text-[24px] pl-[10px]">
             <TfiMenuAlt />
-          </button>
+          </div>
         </DrawerTrigger>
         <DrawerContent>
           <DrawerHeader>
