@@ -20,7 +20,7 @@ export const Footer = () => {
         <FaDiscord className="text-[20px] md:text-[22px]" />
         <FaInstagram className="text-[20px] md:text-[22px]" />
       </div>
-      <ul className="text-white font-semibold px-[50px] text-[16px] hidden sm:flex lg:text-[20px] justify-center gap-[30px] lg:gap-[70px] items-center border-b-[1px] pb-[30px] border-b-[#787878] order-3">
+      <ul className="text-white font-semibold px-[50px] text-[16px] hidden sm:flex lg:text-[20px] justify-center gap-[30px] lg:gap-[50px] xl:gap-[70px] items-center border-b-[1px] pb-[30px] border-b-[#787878] order-3">
         <li>Terms of Use</li>
         <li>Contact Us</li>
         <li>OddsTrader App</li>
